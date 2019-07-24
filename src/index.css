@@ -1,0 +1,162 @@
+.container {
+  max-width: 66vw;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 86vw;
+  }
+
+  @media screen and (max-width: 425px) {
+    max-width: 92vw;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bbbbbb;
+  padding: 2.2rem 0;
+
+  @media screen and (max-width: 425px) {
+    padding: 1rem 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 86px;
+    border-radius: 50%;
+    height: 86px;
+    object-fit: cover;
+  }
+
+  &__content-info {
+    margin: 0 1rem;
+    padding: 1rem 0;
+
+    @media screen and (max-width: 425px) {
+      margin: 0 .5rem;
+      padding: .5rem 0;
+    }
+  }
+
+  &__full-name {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  &__job-title {
+    font-size: 1.2rem;
+    margin-top: .8rem;
+    font-weight: 400;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  &__contact {
+    margin: .2rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #555;
+    text-decoration: none;
+
+    &_mail span {
+      font-size: 1rem;
+      padding-right: .4rem;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.story {
+  padding: 2.4rem 0 2.4rem .2rem;
+  display: flex;
+
+  &:not(:last-child) {
+    border-bottom: .1rem solid #bbbbbb;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.4rem 0;
+    flex-direction: column;
+  }
+
+  @media print {
+    &_page-end {
+      page-break-after: always;
+      border-bottom: 0 !important;
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    text-align: left;
+    min-width: 10rem;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: .8rem;
+      text-align: center;
+    }
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__definition strong {
+    margin-bottom: .4rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  &__definition small {
+    margin-bottom: .7rem;
+    padding-top: .3rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: #bbb;
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  &__description_size_small {
+    margin-bottom: 2rem;
+
+    @media print {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__project-link {
+    cursor: pointer;
+    color: #08c;
+  }
+
+  &__project-link:active,
+  &__project-link:hover,
+  &__project-link:focus,
+  &__project-link {
+    text-decoration: none;
+  }
+}
+
+@media print {
+  @page { size: auto;  margin: 0; }
+}

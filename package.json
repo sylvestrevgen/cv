@@ -1,0 +1,21 @@
+{
+  "name": "my_cv",
+  "version": "0.1.0",
+  "description": "My CV",
+  "scripts": {
+    "build:html": "gulp html",
+    "build:css": "gulp css",
+    "dev": "gulp watch"
+  },
+  "author": "Paul Timofieiev",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "postcss-nested": "^4.1.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gulp-postcss": "^8.0.0",
+    "postcss-scss": "^2.0.0"
+  }
+}
