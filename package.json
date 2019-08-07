@@ -7,9 +7,9 @@
     "build:css": "gulp css",
     "dev": "gulp watch"
   },
-  "author": "Paul Timofieiev",
+  "author": "Yevhenii Sylvestr",
   "dependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "postcss-nested": "^4.1.2"
   },
