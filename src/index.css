@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #bbbbbb;
-  padding: 2.2rem 0;
+  padding: 1.2rem 0;
 
   @media screen and (max-width: 425px) {
     padding: 1rem 0;
@@ -82,7 +82,7 @@
 }
 
 .story {
-  padding: 2.4rem 0 2.4rem .2rem;
+  padding: 1.4rem 0 1.4rem .2rem;
   display: flex;
 
   &:not(:last-child) {
@@ -137,10 +137,15 @@
   }
 
   &__description_size_small {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     @media print {
       margin-bottom: 1rem;
+      
     }
   }
 
